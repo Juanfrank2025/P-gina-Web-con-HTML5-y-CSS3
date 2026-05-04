@@ -1,0 +1,313 @@
+/* ============================================
+   RESET Y CONFIGURACIÓN BASE
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 25px;
+    border-bottom: 5px solid #e94560;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #b8d4f0;
+    font-weight: 300;
+}
+
+/* ============================================
+   NAVEGACIÓN
+   ============================================ */
+nav {
+    background-color: #16213e;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e94560;
+    color: #ffffff;
+}
+
+/* ============================================
+   MAIN Y SECCIONES
+   ============================================ */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    border-left: 6px solid #e94560;
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+section h2 {
+    color: #0f3460;
+    font-size: 1.9em;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e94560;
+    display: inline-block;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 18px 0;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+section p {
+    margin-bottom: 14px;
+    text-align: justify;
+    font-size: 1.05em;
+}
+
+section ul {
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.02em;
+}
+
+/* ============================================
+   CAJA DESTACADA
+   ============================================ */
+.highlight-box {
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.highlight-box h3 {
+    color: #856404;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+.highlight-box ul {
+    margin-left: 20px;
+}
+
+.highlight-box ul li {
+    margin-bottom: 6px;
+    color: #856404;
+}
+
+/* ============================================
+   SECCIÓN DOCENTE - ESTILOS ESPECÍFICOS
+   ============================================ */
+.docente-box {
+    background-color: #e8f4fd;
+    border-color: #0f3460;
+}
+
+.docente-box h3 {
+    color: #0f3460;
+}
+
+.docente-box ul li {
+    color: #1a1a2e;
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.github-link:hover {
+    background-color: #000000;
+}
+
+/* ============================================
+   FORMULARIO DE CONTACTO
+   ============================================ */
+form {
+    margin-top: 25px;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #dee2e6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #0f3460;
+    font-size: 0.95em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 0 4px rgba(233, 69, 96, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+button[type="submit"] {
+    background-color: #e94560;
+    color: #ffffff;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #c73e54;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background-color: #1a1a2e;
+    color: #b8d4f0;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 50px;
+    border-top: 4px solid #e94560;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+footer p:first-child {
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        text-align: center;
+        border-bottom: 1px solid #0f3460;
+    }
+    
+    section {
+        padding: 22px;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+    }
+    
+    main {
+        padding: 0 12px;
+    }
+}
